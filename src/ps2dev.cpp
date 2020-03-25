@@ -14,18 +14,18 @@
 
 //since for the device side we are going to be in charge of the clock,
 //the two defines below are how long each _phase_ of the clock cycle is
-#define CLKFULL 40
+#define CLKFULL 30
 // we make changes in the middle of a phase, this how long from the
 // start of phase to the when we drive the data line
-#define CLKHALF 20
+#define CLKHALF 15
 
 // Delay between bytes
 // I've found i need at least 400us to get this working at all,
 // but even more is needed for reliability, so i've put 1000us
-#define BYTEWAIT 1000
+#define BYTEWAIT 200
 
 // Timeout if computer not sending for 30ms
-#define TIMEOUT 30
+#define TIMEOUT 1
 
 
 /*
